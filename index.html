@@ -44,7 +44,9 @@
     <div class="rest" id="rest">
         <div class="rest1">
             <img src="./images/qrr7x2km.png" alt="" class="bg">
-            <h1 class="content">Take Your Career to the Next Level with <b>ConnexNeocities</b> </h1>
+            <div class="k">
+            <h1 class="content">Take Your Career to the Next Level with</h1><h1>ConnexNeocities</h1>
+            </div>
             <p class="content1">Join Our Exciting Internship Journey</p>
             <button class="join" onclick="applicationForm()">Join Now</button>
         </div>
@@ -92,19 +94,19 @@
     <img src="./images/logo.jpeg" alt="" class="flight">
     <div class="bo">
         <div class="form-container">
-            <form action="#" method="POST" id="applicationForm">
-                <input type="text" name="unique_name" placeholder="Name">
-                <input type="number" name="unique_phone" placeholder="Phone Number">
-                <input type="email" name="unique_college" placeholder="Email">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScJsAtg7Z3MRRIMty1n0vq1S_s3IQrkBJXfxpy7bv3IG0rW_Q/formResponse" method="POST" id="applicationForm">
+                <input type="text" name="entry.1534278507" placeholder="Name">
+                <input type="number" name="entry.274477321" placeholder="Phone Number">
+                <input type="email" name="entry.326653312" placeholder="Email">
                 <input type="text" name="unique_country" placeholder="Country">
                 <select name="unique_status">
                     <option value="" disabled selected>Working or Student</option>
                     <option value="working">Working</option>
                     <option value="student">Student</option>
                 </select>
-                <input type="text" name="unique_degree" placeholder="Degree">
-                <input type="text" name="unique_specification" placeholder="Specification">
-                <select name="unique_interested_field">
+                <input type="text" name="entry.2108440094" placeholder="Degree">
+                <input type="text" name="entry.1888577175" placeholder="Specification">
+                <select name="entry.1168362142">
                     <option value="" disabled selected>Interested Field</option>
                     <option value="web">Web Development</option>
                     <option value="ui">UI Design</option>
@@ -136,8 +138,60 @@
     </div>
 </div>
 
+<script>
+    function toggleMenu() {
+
+        const navigation = document.querySelector('.navigation');
+        const hamburger = document.querySelector('.hamburger');
+        navigation.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    }
+
+    
+    // document.getElementById('submitBtn').onclick = function(event) { 
+    //     event.preventDefault(); // Prevent the form from submitting the traditional way 
+    //     const fields = document.querySelectorAll("input, select"); 
+    //     for (const field of fields) { 
+    //         if (field.value.trim() === "" && !field.disabled) { 
+    //             alert("Please fill out all fields.");
+    //             return false;
+    //         } 
+    //         } 
+    //         const third = document.querySelector('.submitted');
+    //         const next_form = document.querySelector('.next-setup');
+    //           next_form.style.display = 'none'; 
+    //           third.style.display = 'block'; // Perform further actions, e.g., sending data to the server using AJAX 
+    //     }
+
+
+  document.getElementById('submitBtn').onclick = function(event) {
+    const fields = document.querySelectorAll("input, select");
+    for (const field of fields) {
+        if (field.value.trim() === "" && !field.disabled) {
+            alert("Please fill out all fields.");
+            return false;
+        }
+    }
+    // Allow form to be submitted traditionally
+    document.getElementById("applicationForm").submit();
+};
+
+
+    function applicationForm(){
+        const initial=document.querySelector('.initial_setup');
+        const next_form=document.querySelector('.next-setup');
+        initial.style.display = 'none';
+        next_form.style.display = 'block';
+        window.scrollTo({ top: next_form.offsetTop, behavior: 'auto'});
+    }
+
+    function applyagain(){
+        document.querySelector(".next-setup").style.display = 'block';
+        document.querySelector(".submitted").style.display = 'none';
+        document.getElementById("applicationForm").reset();
+    }
+
+</script>
 </body>
 
 </html>
-
-

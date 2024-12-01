@@ -728,11 +728,11 @@ height: 100px;
 
 
 .next-setup{
-    display: none;
+    display: block;
 }
 
 .initial_setup{
-    display: block;
+    display: none;
 }
 /* option{
 color: aqua;

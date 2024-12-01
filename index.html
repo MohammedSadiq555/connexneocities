@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>ConnexNeocities</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="initial_setup">
+    
+    <div class="header">
+        <div class="inside-container">
+            <img src="./images/logo.jpeg" alt="" class="logo">
+        <h2 class="olap">Internships</h2>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="navigation">
+            <!-- <a href="" class="home">Home</a>
+            <a href="" class="internship">Internship</a>
+            <a href="" class="courses">Courses</a>
+            <a href="" class="contact">Contact us</a> -->
+
+            <a href="#rest" class="home">Home</a>
+            <a href="#provide" class="internship">Internship</a>
+            <a href="#courses" class="course">Courses</a>
+            <a href="#footer" class="contact">Contact us</a>
+        </nav>
+    </div>
+
+    <div class="rest" id="rest">
+        <div class="rest1">
+            <img src="./images/qrr7x2km.png" alt="" class="bg">
+            <h1 class="content">Take Your Career to the Next Level with <b>ConnexNeocities</b> </h1>
+            <p class="content1">Join Our Exciting Internship Journey</p>
+            <button class="join" onclick="applicationForm()">Join Now</button>
+        </div>
+        <div class="provide" id="provide">
+            <h1 class="second-title">Internships That we Provide</h1>
+            <div class="host">
+                <div class="toast">
+                    <img src="https://media1.tenor.com/m/sfp8nf9UrZcAAAAd/uwu-cat.gif" alt="">
+                    <h1 class="toastname">Web Development</h1>
+                    <button class="join1" onclick="applicationForm()">Join Now</button>
+                </div>
+                <div class="toast ui">
+                    <img src="https://media1.tenor.com/m/LMpVMsVPmVEAAAAd/mobile-application-digital-marketing.gif" alt="" >
+                    <h1 class="toastname">UI design</h1>
+                    <button class="join1" onclick="applicationForm()">Join Now</button>
+                </div>
+                <div class="toast">
+                    <img src="https://media.tenor.com/_E-NCczd1nYAAAAi/python.gif" alt="" style="filter: drop-shadow(10px 10px 5px rgba(44, 109, 1, 0.5));">
+                    <h1 class="toastname">Python Programming</h1>
+                    <button class="join1" onclick="applicationForm()">Join Now</button>
+                </div>
+
+            </div>
+            <div class="courses" id="courses">
+                <h1 class="second-title">Courses</h1><br><br>
+                <div class="newtons-cradle">
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>©2023 Reserved. All rights Reserved and Designed and Marketted by ConnexNeocities Team</p>
+
+    </div>
+
+</div>  
+<div class="next-setup">
+        <div class="bodyg">
+        
+    <img src="./images/logo.jpeg" alt="" class="flight">
+    <div class="bo">
+        <div class="form-container">
+            <form action="#" method="POST" id="applicationForm">
+                <input type="text" name="unique_name" placeholder="Name">
+                <input type="number" name="unique_phone" placeholder="Phone Number">
+                <input type="email" name="unique_college" placeholder="Email">
+                <input type="text" name="unique_country" placeholder="Country">
+                <select name="unique_status">
+                    <option value="" disabled selected>Working or Student</option>
+                    <option value="working">Working</option>
+                    <option value="student">Student</option>
+                </select>
+                <input type="text" name="unique_degree" placeholder="Degree">
+                <input type="text" name="unique_specification" placeholder="Specification">
+                <select name="unique_interested_field">
+                    <option value="" disabled selected>Interested Field</option>
+                    <option value="web">Web Development</option>
+                    <option value="ui">UI Design</option>
+                    <option value="python">Python Programming</option>
+                </select>
+                <!-- <div style="color: #b4c8d1;">
+                    <input type="radio" name="unique_confirmation" value="yes" id="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="unique_confirmation" value="no" id="no">
+                    <label for="no">No</label>
+                </div> -->
+                <button type="submit" value="Submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    
+    </div>
+
+    </div>
+</div> 
+<div class="submitted">
+    <img src="./images/logo.jpeg" alt="" class="flight" style="z-index: 0;">
+    <div class="submitted-1">
+
+        <p class="submitted-2">🎉 Your Application has been Successfully Submitted! 🎉</p> <br><br>
+        <p class="submitted-2">Thank you for submitting your application! Please keep an eye on your email inbox for a confirmation mail and your Application ID.</p> <br><br>
+        <p class="submitted-2">If you can't find the mail in your inbox, kindly check your Spam folder.</p> <br><br>
+        <p class="submitted-2">Ready to submit another application? Click the button below!</p> <br><br> 
+        <button class="join2" onclick="applyagain()">Apply Again</button>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
